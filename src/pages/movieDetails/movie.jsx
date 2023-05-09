@@ -23,9 +23,12 @@ export const Movie = () => {
 
     return (
         <div className="movie">
+            {/* movie cover */}
             <div className="movie__intro">
                 <img className="movie__backdrop" src={`https://image.tmdb.org/t/p/original${currentMovieDetail ? currentMovieDetail.backdrop_path : ""}`} />
             </div>
+
+            {/*  */}
             <div className="movie__detail">
                 <div className="movie__detailLeft">
                     <div className="movie__posterBox">

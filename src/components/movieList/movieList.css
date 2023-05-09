@@ -9,6 +9,7 @@ margin:  2.5rem;
 
 .list__cards {
     display: flex;
+    column-gap: 4px;
     flex-wrap: wrap ;
     justify-content: center;
 }

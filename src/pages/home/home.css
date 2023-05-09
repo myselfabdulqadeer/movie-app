@@ -2,6 +2,7 @@
     min-height: 600px;
 }
 
+/* define the size of image in the crousal */
 .posterImage > img {
     margin: auto;
     display: block;
@@ -29,17 +30,21 @@
 
 .posterImage__title {
     font-weight: 900;
-    font-size: 4rem;
+    /* font-size: 4rem; */
+    font-size: clamp(1rem, 2.5vw, 4rem); 
     margin-bottom: 0.4rem;
     text-align: left;
 }
 
 .posterImage__runtime {
-    font-size: 2rem;
+    border: 1px solid white;
+    /* font-size: 2rem; */
+    font-size: clamp(1rem, 2.5vw, 4rem); 
     margin-bottom: 1rem;
 }
 
 .posterImage__rating {
+    font-size: clamp(1rem, 2.5vw, 4rem); 
     margin-left: 3rem;
 }
 
@@ -50,4 +55,26 @@
     display: flex;
     text-align: left;
     width: 50%;
+}
+
+
+@media screen and (max-width: 768px){
+
+    /* .posterImage__runtime{
+        display: none;
+    } */
+
+
+    .posterImage__description{
+        display: none;
+    }
+
+    .posterImage img{
+        min-height: 100vh;
+        object-fit: cover;
+    }
+    .posterImage__rating{
+        margin-left: 1rem;
+    }
+    
 }

@@ -4,9 +4,12 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+    /* border: 1px solid white; */
 }
 
 .headerLeft, .headerRight {
+    width: 100%;
+    /* border: 1px solid white; */
     display: flex;
     align-items: center;
 }
@@ -31,43 +34,13 @@ a > span:hover {
     font-size: 2rem;
 }
 
-.menu-items-container{
-    color: green;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    position: fixed;
-    background-color: black;
-    width: 150px;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    /* display: none; */
+.nav-menu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
-.menu-items-container div{
-    color: white;
-}
 
-.close-btn{
-    width: 30px;
-    margin-top: 20px;
-    margin-left: 50px;
-}
-
-.items-nav{
-    display: flex;
-    color: black;
-    font-size: 20px;
-    flex-direction: column;
-    color: white;
-    background-color: orange;
-    flex-wrap: wrap;
-    font-size: 10px;
-}
 
 @media screen and (max-width: 768px){
 
@@ -78,14 +51,19 @@ a > span:hover {
     .header__icon{
         width: 50px;
     }
-    .header{
-        /* position: fixed; */
-        justify-content: space-between;
-        align-items: stretch;
-    }
 
-    .menu-icon{
-        width: 30px;
+    .header__icon {
+        margin-left: 0;
     }
+    
+    
+}
+
+@media screen and (min-width: 768px){
+
+    .nav-menu{
+        display: none;
+    }
+   
     
 }

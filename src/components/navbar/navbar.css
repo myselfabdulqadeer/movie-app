@@ -1,0 +1,45 @@
+.menu-options{
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid white; */
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 150px;
+	height: 100vh;
+	z-index: 1;
+	background-color: black;
+}
+
+.close-btn{
+	background-color: transparent;
+	border: none;
+}
+
+.close-img{
+	width: 30px;
+	float: right;
+	margin-right: 20px;
+}
+
+.menu-options div {
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+	/* border: 1px solid white; */
+}
+
+/* .block-level {
+	display: block;
+	text-align: center;
+} */
+/* .menu-options span {
+	font-size: 20px;
+	margin-top: 20%;
+	border: 1px solid white;
+} */
+
+button{
+	background: black;
+	border: none;
+}
